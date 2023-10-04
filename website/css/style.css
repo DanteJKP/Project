@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:ital,wght@0,200;0,300;0,400;1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  background-color: rgb(108, 6, 15);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  line-height: 80px;
+  z-index: 111;
+  width: 100%;
+  margin-bottom: 30px;
+  background: linear-gradient(35deg, rgb(0, 0, 0), rgb(214, 12, 12));
+  border: 0 2px 10px black;
+}
+
+.logo {
+  display: flex;
+  font-size: 40px;
+  font-weight: 800;
+  color: #f6f9fa;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+b {
+  font-size: 70px;
+  color: blue(41, 41, 82);
+}
+
+.navItems {
+  display: flex;
+  cursor: pointer;
+}
+
+.navItems li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.navItems li a {
+  font-size: 25px;
+  color: #f0f3f5;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.navItems li a:hover,
+.link :hover {
+  color: #0d0d0d;
+  text-shadow: 50px white;
+}
+
+.link {
+  font-size: 50px;
+  margin: 10px 10px;
+  padding-bottom: 20px;
+  letter-spacing: 4px;
+  text-decoration: none;
+}
+
+.link a {
+  color: #f6f9fa;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+  overflow: hidden;
+  height: calc(100vh - 80px);
+}
+
+.wrapper::before {
+  position: absolute;
+  content: "";
+  height: 440px;
+  width: 440px;
+  left: -12%;
+  border-radius: 50%;
+  top: 40%;
+  animation: object1 6s linear infinite;
+  background: linear-gradient(45deg, rgb(5, 5, 5), rgb(214, 12, 12));
+}
+
+.cols0 {
+  z-index: 5;
+}
+
+.wrapper::after {
+  position: absolute;
+  content: "";
+  height: 130px;
+  width: 130px;
+  left: 35%;
+  border-radius: 50%;
+  top: 23%;
+  animation: object2 6s linear infinite;
+  background: linear-gradient(45deg, rgb(0, 0, 0), rgb(214, 12, 12));
+}
+
+@keyframes object1 {
+  50% {
+    left: -12%;
+    top: 42%;
+  }
+}
+
+@keyframes object2 {
+  50% {
+    left: 35%;
+    top: 19%;
+  }
+}
+
+.cols {
+  width: 50%;
+}
+
+.topline {
+  display: block;
+  position: relative;
+  font-size: 25px;
+  letter-spacing: 5px;
+  color: #ffffff;
+}
+
+.topline::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 45px;
+  bottom: 10px;
+  background-color: #0d0d0d;
+}
+
+h1 {
+  display: block;
+  font-size: 5em;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.multiText {
+  color: #0d0d0d;
+  text-transform: capitalize;
+}
+
+p {
+  display: block;
+  font-size: 1.2em;
+  width: 80%;
+  color: #ffffff;
+}
+
+.btn {
+  width: 100%;
+  position: relative;
+  left: 170px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  font-weight: 400;
+  color: aliceblue;
+  background-color: rgb(214, 12, 12);
+  padding: 5px 5px;
+  margin: 40px 15px;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+button::after {
+  background-color: none;
+}
+
+.imgbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imgbox img {
+  position: relative;
+  height: 100%;
+  top: -100%;
+  right: 80px;
+  left: 30%;
+  animation: animator 4s linear infinite;
+  width: 553px;
+}
+
+@keyframes animator {
+  50% {
+    right: 70px;
+    left: 32%;
+    top: -2px;
+  }
+}
+
+.imgbox #splash {
+  position: absolute;
+  top: 7%;
+  left: -5%;
+  transform: translate(-50% -50%) rotate(-35deg);
+  width: 120%;
+  filter: saturate(200%);
+  animation: animato 4s linear infinite;
+}
+
+@keyframes animato {
+  50% {
+    right: 2px;
+    top: 10px;
+  }
+}
+
+.cerita {
+  width: 100%;
+}
+
+.container-2 {
+  display: flex;
+  background-color: #0e0d0d;
+  width: 100%;
+  padding: 30px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container-2 .foto-jdl img {
+  width: 550px;
+  height: auto;
+}
+
+.judul-cerita h1 {
+  font-size: 4.5rem;
+  letter-spacing: 3px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.judul-cerita p {
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.play {
+  display: flex;
+  background-color: rgb(108, 6, 15);
+  width: 100%;
+  padding: 50px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  margin-bottom: 75px;
+}
+
+.foto img {
+  width: 500px;
+  object-fit: cover;
+  height: auto;
+  padding: 70px;
+  filter: drop-shadow(10px 8px 6 px #0e0d0d);
+}
+
+.judulnya h2 {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-shadow: 90px black;
+  padding-left: 30px;
+  left: 0;
+}
+
+.judulnya p {
+  padding-left: 30px;
+  font-size: 1.4rem;
+  font-weight: 900;
+  text-align: left;
+  color: white;
+  margin: auto;
+  letter-spacing: 1.2px;
+}
+
+.project-1 {
+    background-color: rgb(108, 6, 15) ;
+    width: 100%;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-1 .project-tabel {
+    display: inline-table;
+    height: 150px;
+    padding: 10px;
+    width: 20em;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px 0 black;
+}
+
+.project-1 .project-tabel .project-tabel-judul h1{
+    font-size: 35px;
+    text-align: center ;
+    letter-spacing: 1.2px;
+    padding-bottom: 10px;
+}
+
+.project-1 .project-tabel .project-tabel-isi p {
+    align-items: center;
+    padding-left: 30px;
+    font-size: 20px;
+    
+}
